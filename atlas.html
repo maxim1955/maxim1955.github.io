@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script async src="https://api-maps.yandex.ru/2.1/?apikey=bf52151d-ac40-4a00-a07f-0fc8f659b82d&lang=ru_RU"
+            type="text/javascript">
+    </script>
+    <script defer src="./js/yandexapi.js" type="text/javascript"></script>
+    <!-----------------------------------------START  Yandex.Metrika counter-------------------------------------- -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(93802940, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/93802940" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!---------------------------------------  END Yandex.Metrika counter----------------------------------------- -->
+
+    <title>VR-AR</title>
+    <script type="text/javascript">
+        if (window.location.hostname.indexOf("www") == 0) {
+            window.location = window.location.href.replace("www.", "");
+        }
+    </script>
+
+    <script defer src="js/open_reviews.js"></script>
+    <script src="js/jquery.js"></script>
+    <script defer src="js/partners_slider.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/click.js"></script>
+    <script defer src="js/OpenClose.js"></script>
+    <script defer src="js/inputmask.js"></script>
+
+    <script defer src="js/modals.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-window.css"/>
+    <link rel="stylesheet" href="css/Modals_age.css"/>
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/Modals_age.css"/>
+    <link rel="stylesheet" href="./css/atlas.css"/>
+
+</head>
+
+<body class="atlas_body" >
+<header class="wrap header atlas_body">
+    <div class="header_inner">
+        <div>
+            <a href="index.html"><img class="header_first_list" src="img/LOGO_VRAR.svg"/></a>
+        </div>
+        <div class="header_img_container">
+            <a href="https://rs.gov.ru/" target="blank"><img class="header_list_img" src="img/россотрудничество.svg"
+                                                             alt="Россотрудничество"/></a>
+            <a href="https://concord.ac/" target="blank"><img class="header_img_logo" src="img/содружество.svg"
+                                                              alt="СП Содружество"/></a>
+        </div>
+    </div>
+
+    <div class="header_body">
+        <div class="header_burger">
+            <span></span>
+        </div>
+        <nav class="header_menu">
+            <div class="header_hide header_hide_top">
+                <img src="img/LOGO_VRAR_small.svg"/>
+            </div>
+
+            <div class="header_menu_flex">
+                <div class="header_menu_main">
+                    <ul class="header_list">
+                        <li class="header_list_item">
+                            <a href="index.html" class="header_link">Главная</a>
+                        </li>
+                        <li class="header_list_item">
+                            <a href="#" class="header_link header_link_height">Профориентационный тест</a>
+                        </li>
+                        <li class="header_list_item">
+                            <a href="#" class="header_link">Учебный атлас</a>
+                        </li>
+                        <li class="header_list_item">
+                            <a href="#" class="header_link">Материалы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_phone_container">
+                    <a class="header_link header_link_color" href="tel:+7 (499) 110-19-20">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M23.7142 17.014C22.1529 17.014 20.6222 16.77 19.1702 16.29C18.4742 16.054 17.6195 16.27 17.1929 16.7087L14.3155 18.8807C11.0142 17.1193 8.90353 15.0073 7.16619 11.7327L9.27953 8.92599C9.81286 8.39265 10.0035 7.61532 9.77419 6.88598C9.29286 5.42465 9.04753 3.89398 9.04753 2.33398C9.04753 1.23132 8.15019 0.333984 7.04753 0.333984H2.38086C1.27819 0.333984 0.380859 1.23132 0.380859 2.33398C0.380859 15.1993 10.8489 25.6673 23.7142 25.6673C24.8169 25.6673 25.7142 24.77 25.7142 23.6673V19.014C25.7142 17.9113 24.8169 17.014 23.7142 17.014Z"/>
+                        </svg>
+                        +7 (499) 110-19-20</a>
+                </div>
+                <div class="footer_contacts_top">
+                    <!-- <img class="footer_contacts_icons" src="img/mail.svg" alt="" /> -->
+                    <a class="header_link header_link_color" href="mailto:vr-kz@concord.ac">
+                        <svg width="32" height="22"
+                             viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M28.6667 0.333984H3.33333C1.496 0.333984 0 1.82998 0 3.66732V18.334C0 20.1713 1.496 21.6673 3.33333 21.6673H28.6667C30.504 21.6673 32 20.1713 32 18.334V3.66732C32 1.82998 30.504 0.333984 28.6667 0.333984ZM11.76 12.1793L3.76 18.846C3.636 18.95 3.484 19.0006 3.33333 19.0006C3.14133 19.0006 2.952 18.9193 2.82 18.7606C2.584 18.478 2.62267 18.0566 2.90533 17.8206L10.9053 11.154C11.188 10.9193 11.6093 10.958 11.8453 11.2393C12.0813 11.5233 12.0427 11.9447 11.76 12.1793ZM16 12.3567C15.2667 12.3567 14.532 12.138 13.892 11.6993L2.95733 4.21798C2.65333 4.00998 2.576 3.59532 2.78267 3.29132C2.98933 2.98732 3.404 2.90865 3.70933 3.11798L14.644 10.5993C15.4667 11.162 16.5307 11.162 17.3547 10.5993L28.2893 3.11798C28.5947 2.91132 29.0093 2.98732 29.216 3.29132C29.424 3.59532 29.3467 4.00998 29.0427 4.21798L18.108 11.6993C17.468 12.138 16.7333 12.3567 16 12.3567ZM29.1787 18.7606C29.0467 18.9193 28.8573 19.0006 28.6667 19.0006C28.516 19.0006 28.3653 18.95 28.24 18.846L20.24 12.1793C19.9573 11.9433 19.9187 11.5233 20.1547 11.2393C20.3907 10.958 20.8107 10.9193 21.0947 11.154L29.0947 17.8206C29.376 18.0566 29.4147 18.478 29.1787 18.7606Z"
+                                    fill="white"/>
+                        </svg>
+                        vr-kz@concord.ac</a>
+                </div>
+
+                <div class="header_hide header_hide_down">
+                    <div>
+                        <a href="https://rs.gov.ru/" target="blank"><img src="img/россотрудничество 1_burger.svg"
+                                                                         alt=""/></a>
+                    </div>
+                    <div class="header_burger_icon">
+                        <a href="https://vk.com/rsgov_qazaqstan" target="blank"><img src="img/Русский дом_burger.svg"
+                                                                                     alt=""/></a>
+                    </div>
+                    <!-- <div>
+                      <a href="https://concord.ac/" target="blank"><img src="img/Содружество_burger.svg" alt="" /></a>
+                    </div> -->
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!--
+  Модальное окно, спрашивающее возраст -->
+
+    <div class="header_last_list header_btn">
+        <button class="header_btn_title">
+            Регистрация участников
+        </button>
+        <div class="age">
+            <button class="age__close"></button>
+            <div class="age__content">
+                <p class="age__info">
+                    Для получения сертификата об участии внесите свои данные
+                </p>
+                <p class="age__question">Вам есть 14 лет?</p>
+                <div class="age__btns modals_btn_wrap">
+                    <button class="age__btn age__btn--yes">Да</button>
+                    <button class="age__btn age__btn--no">Нет</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<main>
+    <div class="atlas_main">
+        <div class="atlas_wrap">
+            <h3 class="atlas_title">Учебный атлас</h3>
+        </div>
+        <div class="atlas_wrap">
+            <p class="atlas_subtitle">Вас ждут увлекательные возможности в области VR, AR и робототехники. Найдите
+                учебное
+                заведение, которое
+                соответствует вашим потребностям и интересам</p>
+        </div>
+        <div class="atlas_group_btn">
+            <div class="atlas_group_btn-first">
+                <button class="atlas_btn_item " id="vr_btn">VR</button>
+                <button class="atlas_btn_item atlas_btn_item-center" id="robot_btn">Робототехника</button>
+                <button class="atlas_btn_item" id="ar_btn">AR</button>
+            </div>
+            <div class="atlas_group_btn-second">
+                <button class="atlas_btn_item" id="higherCollection">Высшее образование</button>
+                <button class="atlas_btn_item atlas_btn_item-center" id="averageCollection">Среднее профессиональное
+                    образование
+                </button>
+                <button class="atlas_btn_item" id="additionalCollection">Дополнительное образование</button>
+            </div>
+        </div>
+        <div id="map" style="width: 100%; height: 80vH;"></div>
+
+        <div class="atlas_legend">
+            <div class="atlas_legend-list ">
+                <p class="atlas_legend_item atlas_legend_item-higher">Высшее образование</p>
+                <p class="atlas_legend_item atlas_legend_item-average">Среднее профессиональное образование</p>
+            </div>
+            <div class="atlas_legend-list atlas_legend-list-second">
+                <p class="atlas_legend_item atlas_legend_item-add">Дополнительное образование</p>
+            </div>
+        </div>
+        <!-------------------------------------------START ATLAS MODAL WINDOW----------------------------------------->
+        <div class="atlas_modal">
+            <div class="atlas_modal-wrapper">
+                <p class="modal-subtitle modal-city">г.Новосибирск</p>
+                <h3 class="modal-title">Федеральное государственное автономное образовательное учреждение высшего
+                    образования «Новосибирский
+                    национальный исследовательский государственный университет»
+                </h3>
+                <h4 class="modal-text">Направление профессиональной подготовки</h4>
+                <p class="modal-caption direction">15.03.06 «Мехатроника и робототехника. Искусственный интеллект» («Когнитивная
+                    робототехника»)</p>
+
+                <h4 class="modal-text">О программе</h4>
+                <p class="modal-caption description">Программа бакалавриата «Когнитивная робототехника» готовит к тому, что будет
+                    завтра: беспилотный
+                    транспорт, умные и ловкие роботы, производство будущего. Студенты изучают и создают продукты на базе
+                    глубокого машинного обучения.
+                </p>
+                <div class="atlas-modal-footer">
+                    <div class="atlas-modal-footer-left">
+                        <h4 class="modal-text modal-text-title ">Формат и сроки обучения:</h4>
+                        <p class="modal-caption format ">бакалавриат, 4 года</p>
+                    </div>
+                    <div class="modal-text">
+                        <a href="#" class="citizen modal-text">Информация для иностранных граждан </a>
+                    </div>
+
+                </div>
+                <div class="atlas-modal-footer-link">
+                    <p class="atlas-link"><img src="img/mail.png" alt="logo world"><a href="" class="atlas-link-items">Узнать о программе подробнее</a></p>
+                    <p class="atlas-link"><img src="img/Hold-The%20Line.png" alt="telephone"><a href=""
+                                                                                                class="atlas-link-items">+7
+                        (383) 363-40-37</a></p>
+                    <p class="atlas-link"><img src="img/telephone.png"><a href="" class="atlas-link-items"></a>priem@nsu.ru
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-------------------------------------------END ATLAS MODAL WINDOW----------------------------------------->
+        <div class="atlas_download">
+            <p class="atlas_download_item">
+                <a href="./files/table_university.xlsx" download class="atlas_download_link">Скачать список всех учебных заведений</a></p>
+        </div>
+    </div>
+</main>
+
+
+<div class="modal modal-age">
+    <div class="modal__overlay">
+    </div>
+</div>
+
+<!-- Конец модального окна, спрашивающего о возрасте -->
+
+
+<!-- FEEDBACK MODAL -->
+<button id="feedback"></button>
+<div class="modal feedback">
+    <div class="modal__overlay">
+        <div class="modal__box">
+            <div class="modal__window">
+                <img src="img/illustration.webp" alt="">
+                <button class="modal__exit"></button>
+                <div class="modal__content">
+                    <h3 class="modal__title">Не нашли ответа на свой вопрос?</h3>
+                    <p class="modal__text">Воспользуйтесь формой, задайте вопрос, и мы лично свяжемся с Вами в ближайшее
+                        время
+                    </p>
+                    <form class="feedback__form" action="">
+                        <label class="modal__label">
+                            <span class="placeholder">Ф.И.О&nbsp;*</span>
+                            <input id="feedback__fio" name="feedback__fio" type="text" class="modal__input fio">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">E-mail&nbsp;*</span>
+                            <input id="feedback__email" name="feedback__email" type="email" class="modal__input email"
+                                   max="150">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Телефон&nbsp;*</span>
+                            <input id="feedback__tel" name="feedback__tel" type="tel" class="modal__input tel">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Задать вопрос&nbsp;*</span>
+                            <textarea id="feedback__question" name="feedback__question" type="text" maxlength="300"
+                                      class="modal__input"></textarea>
+                            <button class="modal__btn"></button>
+                        </label>
+                        <div class="modal__block">
+                            <input class="checkbox__input" type="checkbox" id="feedback__policy">
+                            <label class="modal__label checkbox" for="feedback__policy">
+                  <span class="checkbox__text">
+                    Соглашаюсь с условиями
+                    <a href="files/Политика_обработки_ПДн_на_сайте_Содружество_проект.pdf" class="checkbox__link"
+                       target="blank" download="">Политики
+                      конфиденциальности</a>
+                  </span>
+                            </label>
+                        </div>
+                        <div class="modal__block">
+                            <input class="checkbox__input" type="checkbox" id="feedback__personal">
+                            <label class="modal__label checkbox" for="feedback__personal">
+                  <span class="checkbox__text">
+                    Соглашаюсь с условиями
+                    <a href="files/Согласие_на_обработку_ПДн_на_сайте_Содружество_проект.pdf" class="checkbox__link"
+                       target="blank" download="">Согласия на обработку персональных данных</a>,
+                    <a href="files/Согласие_на_обработку_персональных_данных_для_Содружество_для_детей.pdf"
+                       class="checkbox__link" target="blank" download="">Согласия Пользователя на обработку персональных
+                      данных</a>
+                  </span>
+                            </label>
+                        </div>
+                        <button id="feedback__submit" type="submit" class="modal__submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- REGISTRATION UNDER 14 MODAL -->
+
+<div class="modal registration under">
+    <div class="modal__overlay">
+        <div class="modal__box">
+            <div class="modal__window">
+                <button class="modal__exit"></button>
+                <div class="modal__content">
+                    <h3 class="modal__title">Заполните все поля, чтобы стать участником мероприятий </h3>
+                    <form class="under__form" action="">
+                        <label class="modal__label">
+                            <span class="placeholder">Ф.И.О&nbsp;*</span>
+                            <input id="under__fio" name="under__fio" type="text" class="modal__input fio">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Ф.И.О. законного представителя&nbsp;*</span>
+                            <input id="under__fioRep" name="under__fioRep" type="text" class="modal__input fio">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Наименование организации или учебного заведения&nbsp;*</span>
+                            <input id="under__organization" name="under__organization" type="text"
+                                   class="modal__input organization">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">E-mail&nbsp;*</span>
+                            <input id="under__email" name="under__email" type="email" class="modal__input email"
+                                   max="150">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Телефон&nbsp;*</span>
+                            <input id="under__tel" name="under__tel" type="tel" class="modal__input tel">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <select class="under__choices">
+                            <option value="">Город проведения мероприятия&nbsp;*</option>
+                            <option value="Астана">Астана</option>
+                            <option value="Алматы">Алматы</option>
+                            <option value="Уральск">Уральск</option>
+                            <option value="Город 4">Город 4</option>
+                        </select>
+                        <div class="modal__block">
+                            <input class="checkbox__input" type="checkbox" id="under__policy">
+                            <label class="modal__label checkbox" for="under__policy">
+                  <span class="checkbox__text">
+                    Соглашаюсь с условиями
+                    <a href="files/Политика_обработки_ПДн_на_сайте_Содружество_проект.pdf" class="checkbox__link"
+                       target="blank" download="">Политики
+                      конфиденциальности</a>
+                  </span>
+                            </label>
+                        </div>
+                        <div class="modal__block">
+                            <input class="checkbox__input" type="checkbox" id="under__personal">
+                            <label class="modal__label checkbox" for="under__personal">
+                  <span class="checkbox__text">
+                    Соглашаюсь с условиями
+                    <a href="files/Согласие_на_обработку_ПДн_на_сайте_Содружество_проект.pdf" class="checkbox__link"
+                       target="blank" download="">Согласия на обработку персональных данных</a>,
+                    <a href="files/Согласие_на_обработку_персональных_данных_для_Содружество_для_детей.pdf"
+                       class="checkbox__link" target="blank" download="">Согласия Пользователя на обработку персональных
+                      данных</a>
+                  </span>
+                            </label>
+                        </div>
+
+                        <button id="under__submit" type="submit" class="modal__submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- REGISTRATION OVER 14 MODAL -->
+
+
+<div class="modal registration over">
+    <div class="modal__overlay">
+        <div class="modal__box">
+            <div class="modal__window">
+                <button class="modal__exit"></button>
+                <div class="modal__content">
+                    <h3 class="modal__title">Заполните все поля, чтобы стать участником мероприятий </h3>
+                    <form class="over__form" action="">
+                        <label class="modal__label">
+                            <span class="placeholder">Ф.И.О&nbsp;*</span>
+                            <input id="over__fio" name="over__fio" type="text" class="modal__input fio">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Наименование организации или учебного заведения&nbsp;*</span>
+                            <input id="over__organization" name="over__organization" type="text"
+                                   class="modal__input organization">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">E-mail&nbsp;*</span>
+                            <input id="over__email" name="over__email" type="email" class="modal__input email"
+                                   max="150">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <label class="modal__label">
+                            <span class="placeholder">Телефон&nbsp;*</span>
+                            <input id="over__tel" name="over__tel" type="tel" class="modal__input tel">
+                            <button class="modal__btn"></button>
+                        </label>
+                        <select class="over__choices">
+                            <option value="">Город проведения мероприятия&nbsp;*</option>
+                            <option value="Астана">Астана</option>
+                            <option value="Алматы">Алматы</option>
+                            <option value="Уральск">Уральск</option>
+                            <option value="Город 4">Город 4</option>
+                        </select>
+                        <div class="modal__block">
+                            <input class="checkbox__input" type="checkbox" id="over__policy">
+                            <label class="modal__label checkbox" for="over__policy">
+                  <span class="checkbox__text">
+                    Соглашаюсь с условиями
+                    <a href="files/Политика_обработки_ПДн_на_сайте_Содружество_проект.pdf" class="checkbox__link"
+                       target="blank" download="">Политики
+                      конфиденциальности</a>
+                  </span>
+                            </label>
+                        </div>
+                        <div class="modal__block">
+                            <input class="checkbox__input" type="checkbox" id="over__personal">
+                            <label class="modal__label checkbox" for="over__personal">
+                  <span class="checkbox__text">
+                    Соглашаюсь с условиями
+                    <a href="files/Согласие_на_обработку_ПДн_на_сайте_Содружество_проект.pdf" class="checkbox__link"
+                       target="blank" download="">Согласия на обработку персональных данных</a>,
+                    <a href="files/Согласие_на_обработку_персональных_данных_для_Содружество_для_детей.pdf"
+                       class="checkbox__link" target="blank" download="">Согласия Пользователя на обработку персональных
+                      данных</a>
+                  </span>
+                            </label>
+                        </div>
+                        <button id="over__submit" type="submit" class="modal__submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL THANKS -->
+
+<div class="modal thanks">
+    <div class="modal__overlay">
+        <div class="modal__box">
+            <div class="modal__window">
+                <button class="modal__exit"></button>
+                <div class="modal__content">
+                    <h3 class="modal__title">Поздравляем, вы успешно зарегистрировались!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal sent">
+    <div class="modal__overlay">
+        <div class="modal__box">
+            <div class="modal__window">
+                <button class="modal__exit"></button>
+                <div class="modal__content">
+                    <h3 class="modal__title">Отправлено!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container wrap">
+    <footer class="footer">
+        <div class="footer_block first">
+            <div>
+                <a href="https://concord.ac/" target="_blank"><img src="img/logo_container.svg" alt="logo sodruzestvo"/></a>
+            </div>
+            <div class="footer_contacts">
+                <!-- <img class="footer_contacts_icons" src="img/phone.svg" alt="" /> -->
+                <a class="footer_contacts_text" href="tel:+74991101920">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M23.7142 17.014C22.1529 17.014 20.6222 16.77 19.1702 16.29C18.4742 16.054 17.6195 16.27 17.1929 16.7087L14.3155 18.8807C11.0142 17.1193 8.90353 15.0073 7.16619 11.7327L9.27953 8.92599C9.81286 8.39265 10.0035 7.61532 9.77419 6.88598C9.29286 5.42465 9.04753 3.89398 9.04753 2.33398C9.04753 1.23132 8.15019 0.333984 7.04753 0.333984H2.38086C1.27819 0.333984 0.380859 1.23132 0.380859 2.33398C0.380859 15.1993 10.8489 25.6673 23.7142 25.6673C24.8169 25.6673 25.7142 24.77 25.7142 23.6673V19.014C25.7142 17.9113 24.8169 17.014 23.7142 17.014Z"
+                                fill="white"/>
+                    </svg>
+                    +7 (499) 110-19-20</a>
+            </div>
+            <div class="footer_contacts">
+                <!-- <img class="footer_contacts_icons" src="img/mail.svg" alt="" /> -->
+                <a class="footer_contacts_text" href="mailto:vr-kz@concord.ac">
+                    <svg width="32" height="22" viewBox="0 0 32 22"
+                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M28.6667 0.333984H3.33333C1.496 0.333984 0 1.82998 0 3.66732V18.334C0 20.1713 1.496 21.6673 3.33333 21.6673H28.6667C30.504 21.6673 32 20.1713 32 18.334V3.66732C32 1.82998 30.504 0.333984 28.6667 0.333984ZM11.76 12.1793L3.76 18.846C3.636 18.95 3.484 19.0006 3.33333 19.0006C3.14133 19.0006 2.952 18.9193 2.82 18.7606C2.584 18.478 2.62267 18.0566 2.90533 17.8206L10.9053 11.154C11.188 10.9193 11.6093 10.958 11.8453 11.2393C12.0813 11.5233 12.0427 11.9447 11.76 12.1793ZM16 12.3567C15.2667 12.3567 14.532 12.138 13.892 11.6993L2.95733 4.21798C2.65333 4.00998 2.576 3.59532 2.78267 3.29132C2.98933 2.98732 3.404 2.90865 3.70933 3.11798L14.644 10.5993C15.4667 11.162 16.5307 11.162 17.3547 10.5993L28.2893 3.11798C28.5947 2.91132 29.0093 2.98732 29.216 3.29132C29.424 3.59532 29.3467 4.00998 29.0427 4.21798L18.108 11.6993C17.468 12.138 16.7333 12.3567 16 12.3567ZM29.1787 18.7606C29.0467 18.9193 28.8573 19.0006 28.6667 19.0006C28.516 19.0006 28.3653 18.95 28.24 18.846L20.24 12.1793C19.9573 11.9433 19.9187 11.5233 20.1547 11.2393C20.3907 10.958 20.8107 10.9193 21.0947 11.154L29.0947 17.8206C29.376 18.0566 29.4147 18.478 29.1787 18.7606Z"
+                                fill="white"/>
+                    </svg>
+                    vr-kz@concord.ac</a>
+            </div>
+        </div>
+        <div class="footer_block">
+            <a href="https://rs.gov.ru/" target="_blank"><img class="footer_logos" src="img/img_россотрудничество 1.svg"
+                                                              alt=""/>
+            </a>
+            <a href="https://vk.com/rsgov_qazaqstan" target="_blank"><img class="footer_logos"
+                                                                          src="img/img_русскийдом.svg"
+                                                                          alt=""/></a>
+        </div>
+        <div class="footer_block">
+            <div class="footer_blocks">
+                <a class="footer_contacts_text" href="files/Политика_обработки_ПДн_на_сайте_Содружество_проект.pdf"
+                   target="blank" download="">Политика конфиденциальности
+                </a>
+            </div>
+            <div class="footer_blocks">
+                <a class="footer_contacts_text" href="files/Согласие_на_обработку_ПДн_на_сайте_Содружество_проект.pdf"
+                   target="blank" download="">Согласие на обработку персональных данных</a>
+            </div>
+            <div class="footer_blocks">
+                <a class="footer_contacts_text"
+                   href="files/Согласие_на_обработку_персональных_данных_для_Содружество_для_детей.pdf" target="blank"
+                   download="">Согласие
+                    Пользователя на обработку персональных данных</a>
+            </div>
+            <div class="footer_blocks">
+                <a class="footer_contacts_text" onclick="window.location.href ='php/login.php'" target="blank">Вход для
+                    администратора</a>
+            </div>
+        </div>
+    </footer>
+    <p class="footer_bottomtext">© 2023 ООО СП «СОДРУЖЕСТВО»</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</body>
+
+</html>
