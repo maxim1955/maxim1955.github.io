@@ -371,6 +371,13 @@
 }
 
 /*MEDIA*/
+
+@media (max-width: 1030px) {
+    .atlas_modal {
+        max-width: 960px;
+    }
+}
+
 @media (max-width: 1000px) {
     .atlas_main {
         padding-top: 80px;
@@ -384,6 +391,60 @@
         padding: 20px 0 40px 0;
     }
 }
+@media (max-width: 870px) {
+    #slick-slide02{
+        margin-right: 20px!important;
+    }
+}
+@media (max-width: 780px) {
+    .atlas_legend-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .atlas_legend_item {
+        font-size: 14px;
+    }
+
+    .atlas-modal-footer {
+        flex-direction: column;
+    }
+
+    .citizen {
+        padding-bottom: 45px;
+    }
+
+    .atlas-link {
+        padding-bottom: 14px;
+    }
+
+    .atlas-modal-footer-link {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 512px) {
+
+    .atlas_title{
+        text-align: center;
+    }
+    .atlas_subtitle{
+    padding: 40px 15px;
+    }
+    .atlas_btn_item {
+        padding: 16px 16px;
+
+    }
+    .atlas_download_item{
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 16.8px */
+    }
+}
+
 
 .placemark {
     background-size: 100%;

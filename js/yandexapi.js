@@ -1,21 +1,17 @@
 window.addEventListener('DOMContentLoaded', () => {
+
     ymaps.ready(init);
     let map;
     //Коллекции
     let higherCollection
     let filteredCollection
     //массивы
-    let higherEducation
     let fillteredEducation
-    let sortCollection
-    let activeBtn = true
-    let checkActiveBtn
     let vr_btn = document.querySelector('#vr_btn')
     let ar_btn = document.querySelector("#ar_btn")
     let robotBtn = document.querySelector('#robot_btn')
 
     async function init() {
-
         let center = [61.782062911598075, 85.32215890189144]
         map = await new ymaps.Map(
             'map',
@@ -28,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
             {
                 searchControlProvider: 'yandex#search'
             });
-
         map.controls.remove('searchControl')
         map.controls.remove('trafficControl');
         higherCollection = new ymaps.GeoObjectCollection(null, {});
@@ -54,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             })
 
-        fillteredEducation = [
+        fillteredEducation =  fillteredEducation = [
             {
                 title: "ФИНЭК",
                 desk: "adasasdasd",
@@ -144,6 +139,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 type: 'high'
             }
         ]
+
 
         filterEduc = () => {
             for (let i = 0; i < fillteredEducation.length; i++) {
@@ -361,7 +357,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 str1 =""
                 resultRequest = "select uni_name, short_name, uni_city, latitude, longitude, direction, uni_description, form, url, uni_level, vrarrob from university"
             }
-            console.log(resultRequest)
+            document.cookie = resultRequest
+
         })
 
     })
